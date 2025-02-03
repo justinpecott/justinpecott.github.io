@@ -7,3 +7,5 @@ Credits
 - [Iconduck](https://iconduck.com)
 - [Favicon Generator](https://realfavicongenerator.net)
 - [Haroopath Font](https://www.creativefabrica.com/product/haroopath/)
+- [SVG Repo](https://www.svgrepo.com)
+- [Figtree Font](https://www.erikdkennedy.com/projects/figtree.html)
