@@ -1,0 +1,208 @@
+:root {
+  /* Use the system font. Boring but efficient. https://css-tricks.com/snippets/css/system-font-stack/ */
+  --system-ui: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+
+  --font-size-base: 1rem;
+  --font-size-medium: 1.1rem;
+  --font-size-large: 1.5rem;
+
+  --justin-green: #5d9058;
+  --white: #fff;
+  --gray: #868e96;
+  --dark-gray: #495057;
+
+  --color-link: var(--justin-green);
+  --color-background: var(--white);
+  --color-default: var(--dark-gray);
+
+  --line-height: 1.5rem;
+  --spacing-base: var(--line-height);
+  --spacing-max-width: 48rem; /* aka 768 */
+}
+
+html {
+  /* font: -apple-system-body; is for dynamic type: https://furbo.org/2024/07/04/dynamic-type-on-the-web/ */
+  font: -apple-system-body;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-default);
+  font-family: var(--system-ui);
+  line-height: var(--line-height);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  width: 100%;
+  display: block;
+  max-width: var(--spacing-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-link);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color-default);
+}
+
+h3 {
+  font-size: var(--font-size-medium);
+}
+
+section {
+  padding: var(--spacing-base);
+}
+
+section ul {
+  margin: var(--spacing-base) auto;
+  max-width: var(--spacing-max-width);
+  list-style-type: none;
+  padding-inline-start: 0rem;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-base);
+  border-radius: 10px;
+}
+
+section span {
+  float: right;
+  font-size: var(--font-size-base);
+  font-weight: normal;
+  font-style: italic;
+}
+
+section span img {
+  float: left;
+  height: var(--font-size-base);
+  width: var(--font-size-base);
+  border-radius: 0px;
+  margin-right: calc(var(--font-size-base) / 2);
+}
+
+/*
+Very basic header.
+*/
+header {
+  padding: var(--spacing-base);
+  padding-top: calc(var(--spacing-base) * 2);
+}
+
+header img {
+  height: calc(var(--line-height) * 2);
+  margin-bottom: var(--line-height);
+}
+
+header a {
+  text-decoration: none;
+}
+
+/*
+Simple footer. Center around the compass.
+*/
+footer {
+  padding-left: var(--spacing-base);
+  padding-right: var(--spacing-base);
+}
+
+footer section {
+  border-top: 1px solid var(--color-default);
+  max-width: var(--spacing-max-width);
+  margin: var(--spacing-base) auto;
+  display: flex;
+  padding: 0px;
+  margin-bottom: calc(var(--spacing-base) * 3);
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer span {
+  margin-left: calc(var(--spacing-base) / 4);
+  margin-right: calc(var(--spacing-base) / 4);
+}
+
+footer img {
+  height: var(--spacing-base);
+  width: var(--spacing-base);
+  vertical-align: middle;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: calc(var(--spacing-base) / 2);
+  margin-left: calc(var(--spacing-base) / 2);
+}
+
+/*
+Masonry style layout for the archive -> https://piccalil.li/blog/a-simple-masonry-like-composable-layout/
+*/
+.archive {
+  max-width: var(--spacing-max-width);
+  margin: var(--spacing-base) auto;
+}
+
+.masonry {
+  --gutter: 0.25em;
+  --flow-space: var(--gutter);
+  --switcher-target-container-width: 28rem;
+}
+
+.masonry img {
+  width: 100%;
+}
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, 1em);
+  align-items: var(--switcher-vertical-alignment, flex-start);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc(
+    (var(--switcher-target-container-width, 40rem) - 100%) * 999
+  );
+}
+
+.flow > * + * {
+  -webkit-margin-before: var(--flow-space, 1em);
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}

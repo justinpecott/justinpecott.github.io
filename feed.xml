@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+	<channel>
+		<title>Justin Pecott</title>
+		<link>https://justin.pecott.net</link>
+		<description>Justin Pecott's little corner of the web...</description>
+		<language>en-us</language>
+		<copyright>Copyright 2020-2025, Justin Pecott</copyright>
+		<pubDate>Tue, 07 May 2025 23:00:00 -0700</pubDate>
+		<lastBuildDate>Tue, 07 May 2025 23:00:00 -0700</lastBuildDate>
+		<docs>https://www.rssboard.org/rss-specification</docs>
+		<ttl>1440</ttl>
+		<image>
+			<url>https://justin.pecott.net/apple-touch-icon.png</url>
+			<title>Justin Pecott</title>
+			<link>https://justin.pecott.net</link>
+		</image>
+
+		<item>
+			<title>Sasquatch</title>
+			<link>https://justin.pecott.net/moments/2024/sasquatch</link>
+			<pubDate>Sun, 22 Aug 2024 23:00:00 -0700</pubDate>
+			<description>
+				<![CDATA[
+				<p>
+				  We had a nice time out in
+				  <a href="https://www.seabrookwa.com">Seabrook</a>... ran into a big
+				  ol' Sasquatch!
+				</p>
+				<p>
+				  <img
+					src="/images/photos/20240922-sasquatch-1200x1600.jpeg"
+					alt="A tall wooden sasquatch/bigfoot sculpture standing next to Justin and Pam. Justin is holding Olive, their brown English Cocker Spaniel. The wooden carving, showing a standing bigfoot figure with detailed fur texture, towers over the visitors."
+				  />
+				</p>
+				]]>
+			</description>
+		</item>
+		<item>
+			<title>Dengue</title>
+			<link>https://justin.pecott.net/moments/2023/dengue</link>
+			<pubDate>Tue, 05 Dec 2023 23:00:00 -0700</pubDate>
+			<description>
+				<![CDATA[
+				<p>
+				  Another incredible trip to Jamaica. And what a nice relaxing trip up
+				  the Black River as you can see. There was just one problem - this is
+				  the moment I got
+				  <a href="https://en.wikipedia.org/wiki/Dengue_fever">dengue fever</a>.
+				  It would be a long couple weeks for me once we got home.
+				</p>
+				<p>
+				  <img
+					src="/images/photos/20231205-dengue-1200x1600.jpeg"
+					alt="Justin
+				  is relaxing in a small fishing boat on calm water on a river in
+				  Jamaica. He's lying back on cushioned boat seats with his legs
+				  stretched out, appearing to be napping or resting. The boat has an
+				  outboard motor and is surrounded by lush green vegetation reflecting
+				  in the still water. The scene captures a peaceful moment of leisure."
+				  />
+				</p>
+				]]>
+			</description>
+		</item>
+		<item>
+			<title>Battle Tank</title>
+			<link>https://justin.pecott.net/moments/2023/battle-tank</link>
+			<pubDate>Fri, 20 Jan 2023 23:00:00 -0700</pubDate>
+			<description>
+				<![CDATA[
+				<p>
+				  The battle tank has been acquired! Looks a little more beastly than
+				  we'll need for trips to the
+				  <a href="https://parks.wa.gov/">State Park</a> but it's nicely
+				  appointed! Thank you to
+				  <a href="https://www.teardropsnw.com/">Teardrops NW</a>!
+				</p>
+				<p>
+				  <img
+					src="/images/photos/20230120-battle-tank-1600x1200.jpeg"
+					alt="A green teardrop trailer with a rooftop tent parked outside the TearDrops NW facility. Pam and Justin are standing beside the trailer, smiling at the camera. The building behind them has a sign that reads 'TearDrops NW' with the tagline 'It's Still Camping!' The compact trailer features black wheels, a rear hatch, and appears designed for outdoor adventures."
+				  />
+				]]>
+			</description>
+		</item>
+
+	</channel>
+</rss>
