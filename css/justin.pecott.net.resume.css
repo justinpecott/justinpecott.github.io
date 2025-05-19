@@ -1,0 +1,80 @@
+html {
+  /* font: -apple-system-body; is for dynamic type: https://furbo.org/2024/07/04/dynamic-type-on-the-web/ */
+  font: -apple-system-body;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Universal box-sizing reset for easier layout math */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* Use the system font. Boring but efficient. https://css-tricks.com/snippets/css/system-font-stack/ */
+  font-family: system-ui, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #fff;
+  color: #222;
+  line-height: 1.5;
+  max-width: 48rem;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 1rem;
+}
+
+a {
+  color: #222;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+footer {
+  padding-bottom: 100px;
+}
+
+ul {
+  padding-inline-start: 1.25rem;
+}
+
+.cozy {
+  margin-block-start: 0.2rem;
+}
+
+/* Look good for printing and pdf */
+@media print {
+  body {
+    margin: 0;
+    color: black;
+    background: white;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
